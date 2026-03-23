@@ -19,6 +19,18 @@ setInterval(() => {
     days + " days until the villa 💋";
 }, 1000);
 
+function updateEventText(day) {
+  const text = document.getElementById("event-text");
+
+  const messages = {
+    1: "Tonight: A Hot New Bombshell Has Entered The Villa 🔥",
+    2: "Tonight: You’re A Bit Of Me 😉",
+    3: "This Morning: All My Eggs Are In One Basket 🥚💕"
+  };
+
+  text.innerText = messages[day] || "Welcome to the villa 💕";
+}
+
 // Text popup
 setTimeout(() => {
   const popup = document.getElementById("textPopup");
