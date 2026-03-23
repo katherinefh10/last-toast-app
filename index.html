@@ -1,6 +1,47 @@
-/last-toast-app
-  ├── index.html
-  ├── style.css
-  ├── app.js
-  ├── manifest.json
-  └── service-worker.js
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Last Toast on the Coast</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#ff7eb3">
+</head>
+
+<body>
+
+<div class="header">
+  <h1>Last Toast on the Coast 💋</h1>
+  <p>April 10–12</p>
+</div>
+
+<div class="tabs">
+  <button onclick="showDay('day1')">Day 1 🌴</button>
+  <button onclick="showDay('day2')">Day 2 🍹</button>
+  <button onclick="showDay('day3')">Day 3 ☀️</button>
+</div>
+
+<div id="day1" class="day active">
+  <div class="card">Workout 💪</div>
+  <div class="card">Beach 🏖</div>
+  <div class="card">Games 🎲</div>
+</div>
+
+<div id="day2" class="day">
+  <div class="card">Photoshoot 📸</div>
+  <div class="card">Dinner 🍝</div>
+  <div class="card">Carriage Ride 🐎</div>
+</div>
+
+<div id="day3" class="day">
+  <div class="card">Bars 🍸</div>
+  <div class="card">Final Toast 🥂</div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
