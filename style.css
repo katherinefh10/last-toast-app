@@ -104,12 +104,6 @@ body::before {
 
 }
 
-.overlay:hover {
-  box-shadow: 0 0 30px rgba(255, 20, 147, 1);
-  transform: scale(1.03);
-  transition: all 0.3s ease;
-}
-
 /* Text animation */
 @keyframes floatIn {
   from {
