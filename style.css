@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #ff7eb3, #ff758c, #ffb199);
+  color: white;
+  text-align: center;
+}
+
+.header {
+  padding: 30px 15px;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+button {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  color: white;
+  font-size: 14px;
+}
+
+.day {
+  display: none;
+}
+
+.day.active {
+  display: block;
+}
+
+.card {
+  margin: 15px;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.25);
+  backdrop-filter: blur(10px);
+  font-size: 18px;
+}
