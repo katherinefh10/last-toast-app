@@ -228,10 +228,6 @@ button {
   display: block;
 }
 
-.day {
-  display: none;
-}
-
 #notification-container {
   position: fixed;
   top: 20px;
