@@ -58,6 +58,14 @@ button {
   color: white;
 }
 
+.couple-btn {
+  background: hotpink;
+  border-radius: 999px;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+}
+
 /* CARDS */
 .card {
   margin: 15px;
