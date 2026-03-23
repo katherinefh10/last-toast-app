@@ -22,6 +22,10 @@ function showDay(dayId) {
   document.getElementById(dayId).classList.add('active');
 }
 
+window.addEventListener("load", () => {
+  showDay("day1");
+});
+
 // Countdown
 const eventDate = new Date("April 10, 2026 12:00:00").getTime();
 
