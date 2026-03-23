@@ -42,6 +42,23 @@ document.getElementById("day3").addEventListener("click", () => {
   updateEventText(3);
 });
 
+function updateEventText(day) {
+  const text = document.getElementById("event-text");
+
+  const messages = {
+    1: "Tonight: A Hot New Bombshell Has Entered The Villa 🔥",
+    2: "Tonight: You’re A Bit Of Me 😉",
+    3: "This Morning: All My Eggs Are In One Basket 🥚💕"
+  };
+
+  text.classList.remove("fade"); // reset animation
+  void text.offsetWidth; // force reflow
+
+  text.innerText = messages[day] || "";
+
+  text.classList.add("fade");
+}
+
 // Text popup
 setTimeout(() => {
   const popup = document.getElementById("textPopup");
