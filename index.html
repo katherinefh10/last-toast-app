@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Last Toast on the Coast</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="style.css">
+<title>Last Toast on the Coast 💋</title>
 
-  <!-- PWA -->
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#ff7eb3">
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#ff4d6d">
 </head>
 
 <body>
 
-<div class="header">
-  <h1>Last Toast on the Coast 💋</h1>
-  <div class="subtitle">April 10–12 • Mount Pleasant & Charleston</div>
+<div class="hero">
+  <div class="overlay">
+    <h1>Last Toast on the Coast 💋</h1>
+    <p>April 10–12 • Charleston</p>
+    <div id="countdown"></div>
+  </div>
 </div>
 
-<div class="text-alert">
-  💌 I've got a text! Your villa weekend starts now...
+<div class="text-popup" id="textPopup">
+  💌 I've got a text!
 </div>
 
 <div class="tabs">
@@ -30,114 +34,37 @@
   <button onclick="showDay('day3')">Day 3 ☀️</button>
 </div>
 
-<!-- DAY 1 -->
 <div id="day1" class="day active">
-
-  <div class="card">
-    <div class="event-title">Arrival in Mount Pleasant ✈️</div>
-    <div class="time">Friday Afternoon</div>
-    <p>Welcome toast 🥂, settle into the villa, let the chaos begin.</p>
-  </div>
-
-  <div class="card">
-    <div class="event-title">Free Afternoon 🌊</div>
-    <p>Beach 🏖 • Pool 💦 • Explore Mount Pleasant</p>
-  </div>
-
-  <div class="card">
-    <div class="event-title">Dinner Plans 🍝</div>
-    <p>At the house or out at Shem Creek</p>
-  </div>
-
-  <div class="card">
-    <div class="event-title">Shem Creek Bar 🍹</div>
-    <p>Saltwater Cowboys — flirty drinks required</p>
-  </div>
-
+  <div class="card">🥂 Arrival + Welcome Toast</div>
+  <div class="card">🌊 Beach / Pool / Explore</div>
+  <div class="card">🍝 Dinner Plans</div>
+  <div class="card">🍹 Saltwater Cowboys (Shem Creek)</div>
 </div>
 
-<!-- DAY 2 -->
 <div id="day2" class="day">
-
-  <div class="text-alert">
-    💌 I've got a text! Today... the competition begins 😈
-  </div>
-
-  <div class="card">
-    <div class="event-title">Pilates Class 🧘‍♀️</div>
-    <div class="time">8:15 AM • Optional</div>
-    <p>Exhale Pilates — earn your cocktails</p>
-  </div>
-
-  <div class="card">
-    <div class="event-title">Breakfast at the House ☕</div>
-  </div>
-
-  <div class="card">
-    <div class="event-title">Beach / Pool Morning ☀️</div>
-  </div>
-
-  <div class="card">
-    <div class="event-title">Lunch at the House 🥗</div>
-  </div>
-
-  <div class="card">
-    <div class="event-title">Bachelorette Games 🎲</div>
-    <p>The competition is ON. May the best girl win 💅</p>
-  </div>
-
-  <div class="card">
-    <div class="event-title">Get Ready 💄</div>
-    <p>Music, makeup, and main character moments</p>
-  </div>
-
-  <div class="card">
-    <div class="event-title">Downtown Charleston 🌆</div>
-  </div>
-
-  <div class="card">
-    <div class="event-title">Photoshoot 📸</div>
-    <div class="time">6:30 – 7:30 PM</div>
-  </div>
-
-  <div class="card">
-    <div class="event-title">Dinner 🍽</div>
-    <div class="time">8:00 PM</div>
-    <p>Downtown Charleston</p>
-  </div>
-
-  <div class="card">
-    <div class="event-title">Ghost Tour 👻</div>
-    <div class="time">10:00 PM</div>
-    <p>Horse & Carriage ride through the city</p>
-  </div>
-
-  <div class="card">
-    <div class="event-title">Night Out 🍸</div>
-    <div class="time">11 PM – Close</div>
-    <p>Club or rooftop bar — no early exits</p>
-  </div>
-
+  <div class="card">🧘‍♀️ Pilates 8:15 AM</div>
+  <div class="card">☕ Breakfast</div>
+  <div class="card">☀️ Beach / Pool</div>
+  <div class="card">🎲 Bachelorette Games</div>
+  <div class="card">💄 Get Ready</div>
+  <div class="card">📸 Photoshoot 6:30</div>
+  <div class="card">🍽 Dinner 8 PM</div>
+  <div class="card">👻 Ghost Carriage 10 PM</div>
+  <div class="card">🍸 Night Out</div>
 </div>
 
-<!-- DAY 3 -->
 <div id="day3" class="day">
-
-  <div class="text-alert">
-    💌 Final text... time to say goodbye to the villa 💔
-  </div>
-
-  <div class="card">
-    <div class="event-title">Pack Up 🧳</div>
-  </div>
-
-  <div class="card">
-    <div class="event-title">Breakfast ☕</div>
-  </div>
-
-  <div class="card">
-    <div class="event-title">Head Home ✈️</div>
-    <p>Until the next girls trip… 💋</p>
-  </div>
-
+  <div class="card">🧳 Pack Up</div>
+  <div class="card">☕ Breakfast</div>
+  <div class="card">✈️ Head Home</div>
 </div>
+
+<div class="actions">
+  <a href="#" class="btn">📸 Photo Album</a>
+  <a href="#" class="btn">🎶 Playlist</a>
+  <a href="https://maps.google.com" class="btn">📍 Maps</a>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
