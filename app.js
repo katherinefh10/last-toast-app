@@ -1,4 +1,8 @@
 // Tab switching
+function showDay(day) {
+  // show content
+}
+
 function showDay(dayId) {
   document.querySelectorAll('.day').forEach(day => {
     day.classList.remove('active');
