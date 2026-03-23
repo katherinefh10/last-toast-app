@@ -12,10 +12,6 @@ function showDay(dayId) {
   }
 }
 
-window.addEventListener("load", () => {
-  showDay("day1");
-});
-
 // Countdown
 const eventDate = new Date("April 10, 2026 12:00:00").getTime();
 
@@ -36,35 +32,7 @@ function updateEventText(day) {
     1: "Tonight: A Hot New Bombshell Has Entered The Villa 🔥",
     2: "Tonight: You’re A Bit Of Me 😉",
     3: "This Morning: All My Eggs Are In One Basket 🥚💕"
-  };
-
-  text.innerText = messages[day] || "Welcome to the villa 💕";
-}
-document.getElementById("day1").addEventListener("click", () => {
-  updateEventText(1);
-});
-
-document.getElementById("day2").addEventListener("click", () => {
-  updateEventText(2);
-});
-
-document.getElementById("day3").addEventListener("click", () => {
-  updateEventText(3);
-});
-
-function updateEventText(day) {
-  const text = document.getElementById("event-text");
-
-  const messages = {
-    1: "Tonight: A Hot New Bombshell Has Entered The Villa 🔥",
-    2: "Tonight: You’re A Bit Of Me 😉",
-    3: "This Morning: All My Eggs Are In One Basket 🥚💕"
-  };
-
-  text.classList.remove("fade"); // reset animation
-  void text.offsetWidth; // force reflow
-
-  text.innerText = messages[day] || "";
+  }
 
   text.classList.add("fade");
 }
