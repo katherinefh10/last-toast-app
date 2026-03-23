@@ -11,16 +11,6 @@ function showDay(dayId) {
     selected.style.display = "block";
   }
 }
-function showDay(day) {
-  // show content
-}
-
-function showDay(dayId) {
-  document.querySelectorAll('.day').forEach(day => {
-    day.classList.remove('active');
-  });
-  document.getElementById(dayId).classList.add('active');
-}
 
 window.addEventListener("load", () => {
   showDay("day1");
