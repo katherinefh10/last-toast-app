@@ -95,30 +95,14 @@ body::before {
   padding: 4px 6px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
+  animation: floatIn 0.8s ease-out;
+
 }
 
 .overlay:hover {
   box-shadow: 0 0 30px rgba(255, 20, 147, 1);
   transform: scale(1.03);
   transition: all 0.3s ease;
-}
-
-.overlay {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-
-  background: rgba(255, 255, 255, 0.85);
-  color: #ff1493;
-
-  padding: 16px 20px;
-  border-radius: 16px;
-
-  box-shadow: 0 0 20px rgba(255, 105, 180, 0.6);
-
-  backdrop-filter: blur(6px);
-
-  animation: floatIn 0.8s ease-out;
 }
 
 /* Text animation */
