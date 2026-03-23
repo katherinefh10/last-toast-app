@@ -28,5 +28,3 @@ setTimeout(() => {
     popup.style.display = "none";
   }, 3000);
 }, 2000);
-
-showTextAlert("📱 TEXT ALERT! Testing this out 🔥");
