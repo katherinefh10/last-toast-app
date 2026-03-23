@@ -18,6 +18,7 @@ body::before {
 .hero {
   background: url('icon.png') center/cover no-repeat;
   height: 300px;
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.3);
   position: relative;
 }
 
@@ -27,6 +28,7 @@ body::before {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.3);
   align-items: center;
 }
 
