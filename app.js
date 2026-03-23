@@ -62,13 +62,3 @@ function updateEventText(day) {
 
   text.classList.add("fade");
 }
-
-// Text popup
-setTimeout(() => {
-  const popup = document.getElementById("textPopup");
-  popup.style.display = "block";
-
-  setTimeout(() => {
-    popup.style.display = "none";
-  }, 3000);
-}, 2000);
