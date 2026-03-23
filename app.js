@@ -1,4 +1,16 @@
 // Tab switching
+function showDay(dayId) {
+  // hide all days
+  document.querySelectorAll(".day").forEach(day => {
+    day.style.display = "none";
+  });
+
+  // show selected day
+  const selected = document.getElementById(dayId);
+  if (selected) {
+    selected.style.display = "block";
+  }
+}
 function showDay(day) {
   // show content
 }
