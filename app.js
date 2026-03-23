@@ -30,6 +30,17 @@ function updateEventText(day) {
 
   text.innerText = messages[day] || "Welcome to the villa 💕";
 }
+document.getElementById("day1").addEventListener("click", () => {
+  updateEventText(1);
+});
+
+document.getElementById("day2").addEventListener("click", () => {
+  updateEventText(2);
+});
+
+document.getElementById("day3").addEventListener("click", () => {
+  updateEventText(3);
+});
 
 // Text popup
 setTimeout(() => {
