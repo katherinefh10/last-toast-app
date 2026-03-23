@@ -1,29 +1,39 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(180deg, #ff7eb3, #ff758c, #ffb199);
   color: white;
-  text-align: center;
+  background: black;
 }
 
-/* Script title */
+/* HERO IMAGE */
+.hero {
+  background: url('icon.png') center/cover no-repeat;
+  height: 300px;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.4);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* TITLE */
 h1 {
   font-family: 'Pacifico', cursive;
   font-size: 34px;
-  margin-bottom: 5px;
 }
 
-/* Subtext */
-.subtitle {
-  font-size: 14px;
-  opacity: 0.9;
+/* COUNTDOWN */
+#countdown {
+  margin-top: 10px;
+  font-size: 16px;
 }
 
-.header {
-  padding: 30px 20px;
-}
-
-/* Tabs */
+/* TABS */
 .tabs {
   display: flex;
   justify-content: center;
@@ -32,53 +42,57 @@ h1 {
 }
 
 button {
-  background: rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.15);
   border: none;
-  padding: 10px 16px;
+  padding: 10px 15px;
   border-radius: 20px;
   color: white;
-  font-size: 14px;
-  backdrop-filter: blur(10px);
 }
 
-/* Day sections */
-.day {
-  display: none;
-  padding-bottom: 30px;
-}
-
-.day.active {
-  display: block;
-}
-
-/* Event cards */
+/* CARDS */
 .card {
   margin: 15px;
   padding: 18px;
   border-radius: 20px;
-  background: rgba(255,255,255,0.25);
-  backdrop-filter: blur(12px);
-  text-align: left;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 20px rgba(255, 77, 109, 0.5);
 }
 
-/* Event title */
-.event-title {
-  font-weight: 500;
-  font-size: 16px;
-}
-
-/* Time */
-.time {
-  font-size: 13px;
-  opacity: 0.8;
-}
-
-/* Love Island text alert */
-.text-alert {
-  margin: 20px;
-  padding: 15px;
-  border-radius: 20px;
+/* TEXT POPUP */
+.text-popup {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   background: #ff4d6d;
-  font-weight: bold;
-  box-shadow: 0 0 15px rgba(255,77,109,0.8);
+  padding: 15px 25px;
+  border-radius: 30px;
+  display: none;
+  box-shadow: 0 0 20px #ff4d6d;
+}
+
+/* BUTTONS */
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px;
+}
+
+.btn {
+  background: linear-gradient(45deg, #ff7eb3, #ff4d6d);
+  padding: 12px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: white;
+}
+
+/* DAYS */
+.day {
+  display: none;
+}
+
+.day.active {
+  display: block;
 }
