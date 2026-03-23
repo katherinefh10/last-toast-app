@@ -113,3 +113,41 @@ button {
 .day.active {
   display: block;
 }
+
+#notification-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.text-alert {
+  background: linear-gradient(135deg, #ff69b4, #ff1493);
+  color: white;
+  padding: 16px 20px;
+  margin-top: 10px;
+  border-radius: 12px;
+  font-weight: bold;
+  box-shadow: 0 8px 20px rgba(255, 20, 147, 0.4);
+  animation: slideIn 0.4s ease, fadeOut 0.4s ease 2.6s forwards;
+}
+
+/* Slide in from right */
+@keyframes slideIn {
+  from {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Fade out after delay */
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translateX(120%);
+  }
+}
