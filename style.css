@@ -53,14 +53,14 @@ body::before { content: "";
                      left: 20px; 
                      background: rgba(255, 255, 255, 0.85); 
                      color: #ff1493; 
-                     padding: 8px 12px; 
-                     border-radius: 16px;
+                     padding: 4px 6px; 
+                     border-radius: 8px;
                     font-weight: bold;
           display: inline-block;
                      box-shadow: 0 0 20px rgba(255, 105, 180, 0.6); 
                      backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(8px);
-          max-width: 250px; 
+          max-width: 150px; 
                      /* prevent overly wide box */ width: auto; animation: floatIn 0.8s ease-out; 
                     } } 
 /* Text animation */ @keyframes floatIn { from { transform: translateY(20px); 
