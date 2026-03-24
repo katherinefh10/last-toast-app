@@ -30,7 +30,8 @@ body::before { content: "";
                         } 
                     } 
 /* Background image */ 
-.hero-img { width: 100%; display: block; 
+.hero-img { width: 100%; 
+           display: block; 
           } 
 /* Gradient overlay layer */ .hero::before { content: ""; 
                                             position: absolute; 
@@ -61,7 +62,7 @@ body::before { content: "";
                      box-shadow: 0 0 20px rgba(255, 105, 180, 0.6); 
                      backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(8px);
-          max-width: 150px; 
+          max-width: auto; 
                      /* prevent overly wide box */ width: auto; animation: floatIn 0.8s ease-out; 
                     } } 
 /* Text animation */ @keyframes floatIn { from { transform: translateY(20px); 
