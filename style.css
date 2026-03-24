@@ -14,12 +14,12 @@ body::before { content: "";
              } 
 /* HERO IMAGE */ 
 .hero { background: url('icon.png') center/cover no-repeat; 
-       height: 300px; position: relative; 
-      } 
-.hero { position: relative; 
+       height: 300px; 
+       position: relative;
        overflow: hidden; 
        border-radius: 20px; 
       } 
+
 .fade { animation: fadeText 0.4s ease; 
       } 
 @keyframes fadeText { from { opacity: 0; 
@@ -40,22 +40,25 @@ body::before { content: "";
                                             animation: gradientShift 6s ease-in-out infinite alternate; 
                                            } 
 .hero::after { content: ""; 
-              position: absolute; inset: 0; 
+              position: absolute; 
+              inset: 0; 
               background: linear-gradient( 120deg, transparent, rgba(255, 255, 255, 0.3), transparent ); 
               animation: shimmer 4s infinite; 
              } 
 @keyframes shimmer { 0% { transform: translateX(-100%); 
                         } 100% { transform: translateX(100%); 
                                } } 
-.overlay { .overlay { position: absolute; 
+.overlay { position: absolute; 
                      bottom: 20px; 
                      left: 20px; 
                      background: rgba(255, 255, 255, 0.85); 
                      color: #ff1493; 
                      padding: 8px 12px; 
+                     
                      /* smaller box */ border-radius: 16px; 
                      box-shadow: 0 0 20px rgba(255, 105, 180, 0.6); 
-                     backdrop-filter: blur(6px); max-width: 250px; 
+                     backdrop-filter: blur(6px); 
+          max-width: 250px; 
                      /* prevent overly wide box */ width: auto; animation: floatIn 0.8s ease-out; 
                     } } 
 /* Text animation */ @keyframes floatIn { from { transform: translateY(20px); 
