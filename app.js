@@ -55,10 +55,3 @@ setInterval(() => {
     countdownEl.innerHTML = days + " days until the Villa 💋";
   }
 }, 1000);
-
-// FIXED function
-
-  setTimeout(() => {
-    text.classList.remove("fade");
-  }, 300);
-}
