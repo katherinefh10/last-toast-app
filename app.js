@@ -25,7 +25,8 @@ setInterval(() => {
     days + " days until the Villa 💋";
 }, 1000);
 
-
+function updateEventText(day) {
+  const text = document.getElementById("event-text");
 
   text.classList.add("fade");
 }
