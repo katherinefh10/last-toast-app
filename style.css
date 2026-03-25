@@ -123,8 +123,9 @@ button { background: rgba(255,255,255,0.15);
       text-decoration: none; 
       color: white; 
      } 
-/* DAYS */ .day { display: none; 
+/* DAYS */ .day, .packing { display: none; 
                 } 
+
 .day.active { display: block; 
             } 
 #notification-container { position: fixed;
