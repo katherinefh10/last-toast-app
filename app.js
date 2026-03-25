@@ -54,4 +54,4 @@ setInterval(() => {
   if (countdownEl) {
     countdownEl.innerHTML = days + " days until the Villa 💋";
   }
-}, 1000);
+
