@@ -46,9 +46,9 @@ function showTextAlert(message) {
   
 <div class="tabs">
   <button onclick="showDay('packing')">What To Pack 👗</button>
-  <button onclick="showDay('day1')">Friday 🌴</button>
-  <button onclick="showDay('day2')">Saturday 🍹</button>
-  <button onclick="showDay('day3')">Sunday ☀️</button>
+  <button onclick="showDay('day1'); updateEventText(1)">Friday 🌴</button>
+  <button onclick="showDay('day2'); updateEventText(2)">Saturday 🍹</button>
+  <button onclick="showDay('day3'); updateEventText(3)">Sunday ☀️</button>
 </div>
 
 <div id="packing" class="packing">
