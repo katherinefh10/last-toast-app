@@ -1,6 +1,6 @@
 // Tab switching
 function showDay(dayId) 
-let startX = 0;
+{let startX = 0;
 let currentTab = 0; // 0 = packing, 1 = day1, etc.
 const tabs = ["packing", "day1", "day2", "day3"];
 const container = document.getElementById("tab-container");
