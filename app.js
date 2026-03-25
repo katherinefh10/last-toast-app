@@ -25,14 +25,7 @@ setInterval(() => {
     days + " days until the Villa 💋";
 }, 1000);
 
-function updateEventText(day) {
-  const text = document.getElementById("event-text");
 
-  const messages = {
-    1: "Tonight: A Hot New Bombshell Has Entered The Villa 🔥",
-    2: "Tonight: You’re A Bit Of Me 😉",
-    3: "This Morning: All My Eggs Are In One Basket 🥚💕"
-  }
 
   text.classList.add("fade");
 }
