@@ -25,6 +25,8 @@ setInterval(() => {
     days + " days until the Villa 💋";
 }, 1000);
 
+function updateEventText(day) {
+  const text = document.getElementById("event-text");
 
 document.getElementById("day1").addEventListener("click", () => {
   updateEventText(1);
@@ -38,8 +40,6 @@ document.getElementById("day3").addEventListener("click", () => {
   updateEventText(3);
 });
 
-function updateEventText(day) {
-  const text = document.getElementById("event-text");
 
    };
 
