@@ -1,11 +1,11 @@
 // Tab switching
 function showDay(dayId) {
-  // hide all days
-  document.querySelectorAll(".day").forEach(day => {
-    day.style.display = "none";
+  // hide ALL sections (packing + all days)
+  document.querySelectorAll(".day, .packing").forEach(section => {
+    section.style.display = "none";
   });
 
-  // show selected day
+  // show the selected section
   const selected = document.getElementById(dayId);
   if (selected) {
     selected.style.display = "block";
