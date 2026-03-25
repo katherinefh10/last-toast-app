@@ -31,11 +31,6 @@ setInterval(() => {
 }, 1000);
 
 // FIXED function
-function updateEventText(day) {
-  const text = document.getElementById("event-text");
-  if (!text) return;
-
-  text.classList.add("fade");
 
   setTimeout(() => {
     text.classList.remove("fade");
