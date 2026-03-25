@@ -5,6 +5,10 @@ function showDay(dayId) {
     section.style.display = "none";
   });
 
+  window.addEventListener("load", () => {
+  showDay("packing"); // or "day1" if you prefer
+});
+  
   // show the selected section
   const selected = document.getElementById(dayId);
   if (selected) {
