@@ -22,7 +22,7 @@ setInterval(() => {
   const days = Math.floor(distance / (1000 * 60 * 60 * 24));
 
   document.getElementById("countdown").innerHTML =
-    days + " days until the villa 💋";
+    days + " days until the Villa 💋";
 }, 1000);
 
 function updateEventText(day) {
