@@ -1,30 +1,9 @@
-// Tab switching
-function showDay(dayId) 
-{let startX = 0;
-let currentTab = 0; // 0 = packing, 1 = day1, etc.
+// Track swipe state
+let startX = 0;
+let currentTab = 0;
 const tabs = ["packing", "day1", "day2", "day3"];
-const container = document.getElementById("tab-container");
 
-// Touch start
-container.addEventListener("touchstart", (e) => {
-  startX = e.touches[0].clientX;
-});
-
-// Touch end
-container.addEventListener("touchend", (e) => {
-  const endX = e.changedTouches[0].clientX;
-  const diffX = endX - startX;
-
-  if (Math.abs(diffX) > 50) { // swipe threshold
-    if (diffX < 0 && currentTab < tabs.length - 1) {
-      currentTab++;
-    } else if (diffX > 0 && currentTab > 0) {
-      currentTab--;
-    }
-    showDay(tabs[currentTab]);
-  }
-});
-
+// Tab switching
 function showDay(dayId) {
   document.querySelectorAll(".day, .packing").forEach(section => {
     section.style.display = "none";
@@ -33,13 +12,43 @@ function showDay(dayId) {
   const selected = document.getElementById(dayId);
   if (selected) selected.style.display = "block";
 
-  currentTab = tabs.indexOf(dayId); // sync swipe with tab index
+  currentTab = tabs.indexOf(dayId);
 
   // update active button
   document.querySelectorAll(".tabs button").forEach(btn => {
     btn.classList.toggle("active", btn.getAttribute("onclick").includes(dayId));
   });
 }
+
+// Wait until DOM is ready
+window.addEventListener("load", () => {
+  const container = document.getElementById("tab-container");
+
+  if (container) {
+    // Touch start
+    container.addEventListener("touchstart", (e) => {
+      startX = e.touches[0].clientX;
+    });
+
+    // Touch end
+    container.addEventListener("touchend", (e) => {
+      const endX = e.changedTouches[0].clientX;
+      const diffX = endX - startX;
+
+      if (Math.abs(diffX) > 50) {
+        if (diffX < 0 && currentTab < tabs.length - 1) {
+          currentTab++;
+        } else if (diffX > 0 && currentTab > 0) {
+          currentTab--;
+        }
+        showDay(tabs[currentTab]);
+      }
+    });
+  }
+
+  // Show default tab
+  showDay("packing");
+});
 
 // Countdown
 const eventDate = new Date("April 10, 2026 12:00:00").getTime();
@@ -54,4 +63,4 @@ setInterval(() => {
   if (countdownEl) {
     countdownEl.innerHTML = days + " days until the Villa 💋";
   }
-
+}, 1000);
